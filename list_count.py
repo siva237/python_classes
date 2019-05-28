@@ -36,9 +36,39 @@
 
 
 
+# l=[1,2,3,4,5]
+# for i in enumerate(l):
+#     print(i)
 
-l=[1,2,3,4,5]
-for i in enumerate(l):
-    print(i)
 
-list
+# Write a program which prints all duplicated values in a list
+# l=[1,2,3,4,5,4,3,5,4,6]
+# length=len(l)
+# repeated=[]
+# for i in range(length):
+#     k=i+1
+#     for j in range(k,length):
+#         if l[i] == l[j] and l[i] not in repeated:
+#             repeated.append(l[i])
+# print(repeated)
+
+
+#Ways to remove duplicates from list
+l=[1,5,3,4,5,4,3,5,2,6]
+# non_repeated=[]
+# for i in l:
+#     if i not in non_repeated:
+#         non_repeated.append(i)
+# print(non_repeated)
+
+# by using list comprehensions
+# non_repeated=[]
+# [non_repeated.append(i) for i in l if i not in non_repeated]
+# print(non_repeated)
+
+# s= set(l)
+# list = list(s)
+# print(list)
+
+res = [i for n, i in enumerate(l) if i not in l[:n]]
+print(res)
