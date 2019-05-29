@@ -72,6 +72,60 @@
 
 
 # convert set to dictionary
-s={1,2,3,4}
-d= dict.fromkeys(s, 1)
-print(d)
+# s={1,2,3,4}
+# d= dict.fromkeys(s, 1)
+# print(d)
+
+# list to dictionary
+# l=['a','s','d']
+# d=dict.fromkeys(l,0)
+# print(d)
+
+# list of tuples ti dict
+# listofTuples = [("Riti" , 11), ("Aadi" , 12), ("Sam" , 13),("John" , 22),("Lucy" , 90)]
+# studentsDict = dict(listofTuples)
+# print(studentsDict)
+
+
+# listOfStr = ["hello", "at" , "test" , "this" , "here" , "now" ]
+# # dictOfWords = { i : 5 for i in listOfStr }
+# dictOfWords = { i : listOfStr[i] for i in range(0, len(listOfStr) ) }
+# dictOfWords1 = { listOfStr[i] : len(listOfStr[i]) for i in range(0, len(listOfStr) ) }
+# print(dictOfWords)
+# print(dictOfWords1)
+
+# Displaying the Keys Alphabetically:
+# key_value = {}
+# key_value[2] = 56
+# key_value[1] = 2
+# key_value[5] = 12
+# key_value[4] = 24
+# key_value[6] = 18
+# key_value[3] = 323
+# for i in sorted (key_value.keys()) :
+#      print(i, end = " ")
+
+
+# Sorting the Keys and Values in Alphabetical Order using the Key.
+# key_value = {}
+# key_value[2] = 56
+# key_value[1] = 2
+# key_value[5] = 12
+# key_value[4] = 24
+# key_value[6] = 18
+# key_value[3] = 323
+# for i in sorted (key_value) :
+#     print ((i, key_value[i]), end =" ")
+
+
+# Sorting the Keys and Values in alphabetical using the value
+key_value = {}
+key_value[2] = 56
+key_value[1] = 2
+key_value[5] = 12
+key_value[4] = 24
+key_value[6] = 18
+key_value[3] = 323
+print(sorted(key_value.items(), key = lambda kv:(kv[1], kv[0])))
+
+
