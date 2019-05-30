@@ -69,13 +69,13 @@
 # print(l)
 
 """find the second largest no. in the given list"""
-l=[1,8,6,4,5]
-for i in range(len(l)):
-
-    for j in range(1,len(l)-i):
-        if l[j - 1] > l[j]:
-            (l[j - 1], l[j]) = (l[j], l[j - 1])
-print(l)
+# l=[1,8,6,4,5]
+# for i in range(len(l)):
+#
+#     for j in range(1,len(l)-i):
+#         if l[j - 1] > l[j]:
+#             (l[j - 1], l[j]) = (l[j], l[j - 1])
+# print(l)
 
 # l.sort()
 # print(l)

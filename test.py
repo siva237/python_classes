@@ -98,4 +98,14 @@
 # getMiddleThreeChars('dynamic')
 
 
+# l=[1,2,3,4,3,2,1,2,3,4,5,6,5,7,7]
+# dict={i:l.count(i) for i in l}
+# print(dict)
+# o/p : {1: 2, 2: 3, 3: 3, 4: 2, 5: 2, 6: 1, 7: 2}
 
+
+s="missisipy"
+l = list(s)
+dict = {i:l.count(i) for i in l}
+print(dict)
+# o/p : {'m': 1, 'i': 3, 's': 3, 'p': 1, 'y': 1}
