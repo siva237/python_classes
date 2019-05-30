@@ -54,7 +54,7 @@
 
 
 #Ways to remove duplicates from list
-l=[1,5,3,4,5,4,3,5,2,6]
+# l=[1,5,3,4,5,4,3,5,2,6]
 # non_repeated=[]
 # for i in l:
 #     if i not in non_repeated:
@@ -70,5 +70,5 @@ l=[1,5,3,4,5,4,3,5,2,6]
 # list = list(s)
 # print(list)
 
-res = [i for n, i in enumerate(l) if i not in l[:n]]
-print(res)
+# res = [i for n, i in enumerate(l) if i not in l[:n]]
+# print(res)
