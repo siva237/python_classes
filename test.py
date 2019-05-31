@@ -106,6 +106,11 @@
 
 s="missisipy"
 l = list(s)
-dict = {i:l.count(i) for i in l}
-print(dict)
+# dict = {i:l.count(i) for i in l}
+# print(dict)
 # o/p : {'m': 1, 'i': 3, 's': 3, 'p': 1, 'y': 1}
+s=set(l)
+d={}
+for i in l:
+    d[i] = l.count(i)
+print(d)
