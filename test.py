@@ -17,7 +17,7 @@
 #         count=count+1
 # print(count)
 
-# list=[1,2,3,4,5,3,2,4,5]
+# list=[1, 2, 3, 4, 5, 3, 2, 4, 5]
 
 
 # a = ['a','b','c',4]
@@ -51,13 +51,13 @@
 #     print("index[",i,"]", s[i] )
 
 
-#remove characters from string starting from zero upto n and return a new string
+# remove characters from string starting from zero upto n and return a new string
 # def removechars(str,n):
 #     return str[n:]
 # print(removechars("siva sankar",5))
 
 
-#return True if first and last number of a list is same
+# return True if first and last number of a list is same
 # l=[1,2,3,4,1]
 # if l[0]==l[-1]:
 #     print("true")
@@ -73,7 +73,7 @@
 # print("python appeared", c,'times')
 
 
-#Given a two list of ints create a third list such that should contain only odd numbers from the first list and even numbers from the second list
+# Given a two list of ints create a third list such that should contain only odd numbers from the first list and even numbers from the second list
 # def mergeList(listOne, listTwo):
 #     thirdList = []
 #     for num in listOne:
@@ -104,13 +104,136 @@
 # o/p : {1: 2, 2: 3, 3: 3, 4: 2, 5: 2, 6: 1, 7: 2}
 
 
-s="missisipy"
-l = list(s)
+# s = "missisipy"
+# l = list(s)
 # dict = {i:l.count(i) for i in l}
 # print(dict)
 # o/p : {'m': 1, 'i': 3, 's': 3, 'p': 1, 'y': 1}
-s=set(l)
-d={}
-for i in l:
-    d[i] = l.count(i)
-print(d)
+# s=set(l)
+# d={}
+# for i in l:
+#     d[i] = l.count(i)
+# print(d)
+#
+#
+# l1=[1,2,3]
+# l2=['one','two','three']
+# l3=[]
+# #output :[(1, 'one'), (2, 'two'), (3, 'three')]
+#
+# # print(list(zip(l1,l2)))
+#
+# for i in enumerate(l1):
+#     for j in enumerate(l2):
+#         if i[0]==j[0]:
+#             l3.append((i[1],j[1]))
+#
+# print(l3)
+
+
+# a='a'
+# print(ord(a))
+
+
+# l1 = [1, 4, 5, 5, 6]
+# d = {}
+# for i in l1:
+#     if (11 - i) in d:
+#         print(str(11-i), ',', str(i))
+#     else:
+#         d[i] = 1
+
+
+# A=10,20,30,40           # tuple packing
+# print(A)
+# print(type(A))
+# a,b,c,d=A               # tuple unpacking
+# print(a,b,c,d)
+
+
+# a=10
+# b=a
+# a=20
+# print(b)        # 10
+
+
+# a=0101    #python 3 is not supported.but in python 2 it takes octal..so, a= 65
+# b=2
+# c=a+b             #c=67
+# print(c)
+
+
+# a = None
+# print(type(a)) # NoneType
+
+# for else and while else
+# a=[10,20,30]
+# for i in a:
+#     print('for loop')
+# else:
+#     print('else block')
+
+# how to find the python version
+# import sys
+# print(sys.version)
+# a='siva'
+# b='a'
+# print(sys.getrefcount(a))  #  find the reference count
+
+
+# l1=[1,2,3,4]
+# l2=[5,6,7]
+# l1.extend(l2)
+# print(l1)
+# l1.append(l2)
+# print(l1)
+
+
+# l=[55,44,77,66,88]
+# # print(sorted(l))
+# l.sort()
+# print(l)
+
+
+# l=['siva','sai','ram']
+# # print([i for i in l if i.startswith('s')])
+# print([i for i in l if i[0] == 'r'])
+
+# find how many different char present in string
+# a='hi how are u'
+# print(len(set(a)))
+
+
+# some standard python errors
+# TypeError:
+# ValueError:
+# NameError:
+# IndexError:
+# IOError
+# KeyError
+
+
+# import random
+# print(random.randrange(1000,10000))
+
+# from random import shuffle
+# l=[1,2,3,4,5,6,7]
+# shuffle(l)
+# print(l)
+
+
+# import datetime
+# import time
+# time=datetime.datetime.now()
+# time= time.asctime()
+# print(time)
+
+
+# how to debug python program in cmd
+# python -m pdb (file name) test.py
+
+s='siva'
+l=list('siva')
+print(l)
+s1=''.join(l)
+print(s1)
