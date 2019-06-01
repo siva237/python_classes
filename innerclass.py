@@ -1,4 +1,4 @@
-#inner class
+# inner class
 # 1.the class which is declared inside ano another class
 # 2.without existing one type of object if there is no chance of existing another object then we go for inner class
 

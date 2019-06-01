@@ -26,6 +26,6 @@ class Engine(Audi, Maruthi):
         print('started',cc)
 
 e = Engine()
-# e.barnd()
+e.barnd()
 Engine.start('with 1000cc Engine')
-#print(Engine.__mro__)
+print(Engine.__mro__)

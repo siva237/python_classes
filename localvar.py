@@ -1,5 +1,5 @@
-#global variable
-# 1.from the clsaa directly we can declare global variable
+# global variable
+# 1.from the class directly we can declare global variable
 # 2.within a method we can declare global variables by using global key word
 
 # local variables

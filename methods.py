@@ -16,13 +16,13 @@ class Employee:
     def __init__(self, eno, ename, esal):
         print("Employee class constructor")
         self.eno = eno
-        self.ename = ename
-        self.esal = esal
+        self.e_name = ename
+        self.e_sal = esal
 
     def display(self):
         print("Employee no :", self.eno)
-        print('Employee name :', self.ename)
-        print('Employee sal :', self.esal)
+        print('Employee name :', self.e_name)
+        print('Employee sal :', self.e_sal)
 
 
 class Test:
