@@ -232,8 +232,10 @@
 # how to debug python program in cmd
 # python -m pdb (file name) test.py
 
-s='siva'
-l=list('siva')
-print(l)
-s1=''.join(l)
-print(s1)
+# from math import sqrt
+# nums = {x:int(float(sqrt(x))) for x in range(30)}
+# print(nums)
+
+
+d = {(x, x + 1): x for x in range(10)}
+print(d)
