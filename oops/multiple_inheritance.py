@@ -2,10 +2,16 @@ class A:
     def one(self):
         print("func one from class A")
 
-class B(A):
+
+class B:
     def two(self):
         print("func two from class B")
 
-obj = B()
+class C(B,A):
+    def three(self):
+        print("func three from class C")
+
+obj = C()
 obj.one()
 obj.two()
+obj.three()
