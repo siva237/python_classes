@@ -21,14 +21,33 @@
 #     print(c)
 
 # fibonacci series by using generators
-def fib(num):
-    a,b = 0,1
-    for i in range(0,num):
-        yield a
-        a,b = b, a+b
+# def fib(num):
+#     a,b = 0,1
+#     for i in range(0,num):
+#         yield a
+#         a,b = b, a+b
+#
+# for item in fib(10):
+#     print(item)
 
-for item in fib(10):
-    print(item)
+
+# Python program to display the Fibonacci sequence up to n-th term using recursive functions
+
+
+# Recursive function to
+#    print Fibonacci sequence
+# def recur_fibo(n):
+#    if n <= 1:
+#        return n
+#    else:
+#        return(recur_fibo(n-1) + recur_fibo(n-2))
+# nterms = 10
+# if nterms <= 0:
+#    print("Plese enter a positive integer")
+# else:
+#    print("Fibonacci sequence:")
+#    for i in range(nterms):
+#        print(recur_fibo(i))
 
 
 
@@ -48,3 +67,18 @@ for item in fib(10):
 #
 # print("factoral of",n,"is:",fact)
 
+
+# Function to return the factorial
+#    of a number using recursion
+def recur_factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*recur_factorial(n-1)
+num = 4
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   print("The factorial of",num,"is",recur_factorial(num))
