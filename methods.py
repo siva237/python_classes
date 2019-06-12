@@ -26,14 +26,16 @@ class Employee:
 
 
 class Test:
-    def update(emp):
+    def update(self,emp):
         print('teat class')
         emp.esal = emp.esal+1000
-        emp.display()
+        #emp.display()
 
 
 e = Employee(12345, 'siva', 10000)
-Test.update(e)
+#Test.update(e)
+t = Test()
+
 
 
 

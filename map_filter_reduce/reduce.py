@@ -1,3 +1,3 @@
 from functools import reduce
 
-print(reduce(lambda x,y:x+y,range(10)))
+print(reduce(lambda x:x*2,range(10)))
