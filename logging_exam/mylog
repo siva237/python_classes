@@ -1,0 +1,7 @@
+2019-06-15 12:55:42,992-informatiion message-INFO
+2019-06-15 12:55:42,994-debug message-DEBUG
+2019-06-15 12:55:42,994-exception message-ERROR
+NoneType: None
+2019-06-15 12:55:43,010-critical message-CRITICAL
+2019-06-15 12:55:43,010-warning message-WARNING
+2019-06-15 12:55:43,010-error messages-ERROR

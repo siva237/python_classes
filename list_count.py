@@ -42,24 +42,24 @@
 
 
 # Write a program which prints all duplicated values in a list
-# l=[1,2,3,4,5,4,3,5,4,6]
-# length=len(l)
-# repeated=[]
+# l1 = [1, 2, 3, 4, 5, 4, 3, 5, 4, 6]
+# length = len(l1)
+# repeated = []
 # for i in range(length):
-#     k=i+1
+#     k = i+1
 #     for j in range(k,length):
-#         if l[i] == l[j] and l[i] not in repeated:
-#             repeated.append(l[i])
+#         if l1[i] == l1[j] and l1[i] not in repeated:
+#             repeated.append(l1[i])
 # print(repeated)
 
 
 #Ways to remove duplicates from list
-# l=[1,5,3,4,5,4,3,5,2,6]
-# non_repeated=[]
-# for i in l:
-#     if i not in non_repeated:
-#         non_repeated.append(i)
-# print(non_repeated)
+l1 = [1, 5, 3, 4, 5, 4, 3, 5, 2, 6]
+non_repeated = []
+for i in l1:
+    if i not in non_repeated:
+        non_repeated.append(i)
+print(non_repeated)
 
 # by using list comprehensions
 # non_repeated=[]

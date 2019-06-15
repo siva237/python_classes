@@ -1,3 +1,5 @@
+# import pdb
+# pdb.set_trace()
 class A:
     def one(self):
         print("func one from class A")
@@ -15,3 +17,4 @@ obj = C()
 obj.one()
 obj.two()
 obj.three()
+print(C.mro())
