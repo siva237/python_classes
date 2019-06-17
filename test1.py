@@ -91,14 +91,68 @@
 #     print(i)
 
 
-n = int(input("Enter any number: "))
-sum1 = 0
-for i in range(1, n):
-    if(n % i == 0):
-        sum1 = sum1 + i
-if(sum1 == n):
-    print("The number is a Perfect number!")
-else:
-    print("The number is not a Perfect number!")
+# n = int(input("Enter any number: "))
+# sum1 = 0
+# for i in range(1, n):
+#     if(n % i == 0):
+#         sum1 = sum1 + i
+# if(sum1 == n):
+#     print("The number is a Perfect number!")
+# else:
+#     print("The number is not a Perfect number!")
 
 
+# word = 'aaaannnnn'
+# counter=1
+# print(range(len(word)))
+# for i in range(len(word)-1):
+#     if word[i]==word[i+1]:
+#         counter +=1
+#         # print (word[i], counter, end='')
+#     else:
+#         counter=1
+#         # print (word[i], counter)
+#     print(word[i], counter, end='')
+
+
+word = "abbcccdddduaa"
+count = 1
+length = ""
+for i in range(len(word)-1):
+    if word[i] == word[i+1]:
+        count += 1
+    else:
+        length += word[i] + str(count)
+        count = 1
+length += word[i+1] + str(count)
+print(length)
+
+
+# Group Anagrams from given list
+# Anagrams are the words that are formed by similar elements but the orders in which these
+# characters occur differ.
+
+# The original list: ['lump', 'eat', 'me', 'tea', 'em', 'plum']
+# The grouped Anagrams: [['me', 'em'], ['lump', 'plum'], ['eat', 'tea']]
+
+# from collections import defaultdict
+#
+# test_list = ['lump', 'eat', 'me', 'tea', 'em', 'plum']
+# print("The original list : " + str(test_list))
+#
+# # using defaultdict() + sorted() + values()
+# temp = defaultdict(list)
+# for ele in test_list:
+#     temp[str(sorted(ele))].append(ele)
+# res = list(temp.values())
+# print(temp)
+# print("The grouped Anagrams : " + str(res))
+
+
+# using list comprehension + sorted() + lambda + groupby()
+# from itertools import groupby
+# test_list = ['lump', 'eat', 'me', 'tea', 'em', 'plum']
+# print("The original list : " + str(test_list))
+# temp = lambda test_list: sorted(test_list)
+# res = [list(val) for key, val in groupby(sorted(test_list, key=temp), temp)]
+# print("The grouped Anagrams : " + str(res))
