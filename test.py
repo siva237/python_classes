@@ -237,5 +237,15 @@
 # print(nums)
 
 
-d = {(x, x + 1): x for x in range(10)}
-print(d)
+# d = {(x, x + 1): x for x in range(10)}
+# print(d)
+
+
+# def f(x, l1 = []):
+#     for i in range(x):
+#         l1.append(i*i)
+#     print(l1)
+#
+# f(2)
+# # f(3,[3, 2, 1])
+# f(3)
