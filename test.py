@@ -201,7 +201,7 @@
 
 # find how many different char present in string
 # a='hi how are u'
-# print(len(set(a)))
+# print(set(a))
 
 
 # some standard python errors
@@ -246,6 +246,39 @@
 #         l1.append(i*i)
 #     print(l1)
 #
-# f(2)
-# # f(3,[3, 2, 1])
-# f(3)
+# f(2)                # [0, 1]
+# f(3,[3, 2, 1])      # [3, 2, 1, 0, 1, 4]
+# f(3)                # [0, 1, 0, 1, 4]
+
+
+# import re
+# def camel_to_snake(text):
+#     str1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', text)
+#     return re.sub('([a-z0-9])([A-Z])', r'\1_\2', str1).lower()
+# print(camel_to_snake('PythonExercises'))
+#
+#
+# snake_case = "this_is_a_snake_case_string"
+# l = snake_case.split("_")
+# print(l[0].capitalize() + "".join(map(str.capitalize, l[1:])))
+
+
+# str = 'green-red-yellow-black-white'
+# l1 = str.split('-')
+# print(l1)
+# l1.sort()
+# print(l1)
+# print('-'.join(l1))
+
+
+# import string
+# alphabet = set(string.ascii_lowercase)
+# print(sorted(alphabet))
+# def ispangram(string):
+#     return set(string.lower()) >= alphabet
+# string = "The quick brown fox jumps over the lazy dog"
+# if (ispangram(string) == True):
+#     print("Yes")
+# else:
+#     print("No")
+

@@ -1,5 +1,23 @@
+# s1 = 'abcde'
+# s2 = '1234567'
+# s3 = 'ABCDEFGHIJ'
+# i = j = k = 0
+# out =''
+# while i< len(s1) or j < len(s2) or k < len(s3):
+#     if i < len(s1):
+#         out +=s1[i]
+#         i +=1
+#     if j < len(s2):
+#         out += s2[j]
+#         j +=1
+#     if k < len(s3):
+#         out += s3[k]
+#         k +=1
+# print(out)   # a1Ab2Bc3Cd4De5E6F7GHIJ
+
+
 """ i/p : my name is siva sankar
-    o/p : sankar siva is name my """
+    o/p : sankar siva is name my"""
 # str="my name is siva sankar"
 # # s1=str.split()
 # # print(s1)
@@ -21,6 +39,115 @@
 # print(l)
 # s2=" ".join(l)
 # print(s2)
+
+
+''' i/p : python programming language
+    o/p :nohtyp gnimmargorp egaugnal '''
+# str1 = 'python programming language'
+# s1 = str1.split()
+# l1 = []
+# for i in s1:
+#     l1.append(i[::-1])
+# print(l1)
+# print(" ".join(l1))
+
+''' i/p : one two three four five six
+    o/p : one owt three ruof five xis'''
+# str1 = 'one two three four five six'
+# word = str1.split()
+# l1 = []
+# i = 0
+# while i < len(word):
+#     if i % 2 == 0:
+#         l1.append(word[i])
+#     else:
+#         l1.append(word[i][::-1])
+#     i += 1
+# out = " ".join(l1)
+# print(out)
+
+
+# s = 'b8c96gd4'   """ o/p : bcdg4689"""
+# # print(sorted(s))
+# alphbets = []
+# digits = []
+# for ch in s:
+#     if ch.isalpha():
+#         alphbets.append(ch)
+#     else:
+#         digits.append(ch)
+# l1 = "".join(sorted(alphbets)+sorted(digits))
+# print(l1)
+
+
+# s = 'a1b2c3'    # o/p : abbccc
+# out = ''
+# for ch in s:
+#     if ch.isalpha():
+#         x = ch
+#     else:
+#         out = out + x*int(ch)
+# print(out)
+
+
+# word = "abbcccdddduaa"      # o/p : a1b2c3d4u1a2
+# count = 1
+# out = ""
+# for i in range(len(word)-1):
+#     if word[i] == word[i+1]:
+#         count += 1
+#     else:
+#         out += word[i] + str(count)
+#         count = 1
+# out += word[i+1] + str(count)
+# print(out)
+
+
+# str = 'a5k3x2'      # o/p : afknxz
+# out = ''
+# for ch in str:
+#     if ch.isalpha():
+#         out += ch
+#         x = ch
+#     else:
+#         d = int(ch)
+#         newch = chr(ord(x) + d)
+#         out += newch
+# print(out)
+
+
+#remove the duplicate string
+# str = 'aabbddddbfbbfjjfhh'
+# l1 = []
+# for ch in str:
+#     if ch not in l1:
+#         l1.append(ch)
+# print(''.join(l1))
+
+str = 'aabbddddbfbbfjjfhh'
+# l1 = []
+# for ch in str:
+#     if ch not in l1:
+#         l1.append(ch)
+# for ch in l1:
+#     print("{} occurs {} times".format(ch,str.count(ch)))
+
+# d = {}
+# for ch in str:
+#     d[ch] = d.get(ch, 0)+1
+# print(d)
+# for k, v in d.items():
+#     print('{} occurs {} times'.format(k, v))
+
+
+# find the vowels in the given string
+# str1 = 'Aabhibus'        # o/p : {'a': 2, 'i': 1, 'u': 1}
+# d = {}
+# vowels = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U' }
+# for ch in str1:
+#     if ch in vowels:
+#         d[ch] = d.get(ch, 0)+1
+# print(d)
 
 
 # l=[1,2,3,4,5]
@@ -102,35 +229,16 @@
 #     print("The number is not a Perfect number!")
 
 
-# word = 'aaaannnnn'
-# counter=1
-# print(range(len(word)))
-# for i in range(len(word)-1):
-#     if word[i]==word[i+1]:
-#         counter +=1
-#         # print (word[i], counter, end='')
-#     else:
-#         counter=1
-#         # print (word[i], counter)
-#     print(word[i], counter, end='')
-
-
-word = "abbcccdddduaa"
-count = 1
-length = ""
-for i in range(len(word)-1):
-    if word[i] == word[i+1]:
-        count += 1
-    else:
-        length += word[i] + str(count)
-        count = 1
-length += word[i+1] + str(count)
-print(length)
-
-
 # Group Anagrams from given list
 # Anagrams are the words that are formed by similar elements but the orders in which these
 # characters occur differ.
+
+# str1 = input("enter the first string:")
+# str2 = input("enter the second string: ")
+# if sorted(str1) == sorted(str2):
+#     print('both strings are anagrams')
+# else:
+#     print('not anagrams')
 
 # The original list: ['lump', 'eat', 'me', 'tea', 'em', 'plum']
 # The grouped Anagrams: [['me', 'em'], ['lump', 'plum'], ['eat', 'tea']]
