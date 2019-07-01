@@ -1,0 +1,2 @@
+this is simple file 2
+for python
