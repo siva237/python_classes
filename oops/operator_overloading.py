@@ -1,15 +1,16 @@
-'''
-class Overloading:
+# '''
+# class Overloading:
+#
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#
+# obj = Overloading(10,20)
+# obj1 = Overloading(20,30)
+#
+# print(obj + obj1)
+# '''
 
-    def __init__(self,x,y):
-        self.x = x
-        self.y = y
-
-obj = Overloading(10,20)
-obj1 = Overloading(20,30)
-
-print(obj + obj1)
-'''
 
 class Overloaing:
 

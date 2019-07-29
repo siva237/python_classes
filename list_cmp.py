@@ -45,6 +45,7 @@
 # print (list[10:])
 
 # x = 'prep'
+# print(len(x))
 # for i in range(len(x)):
 #     print(i)
 
@@ -54,13 +55,13 @@
 #     return a
 # print(myfunc(2))
 
-# n=int(2345)
-# tot=0
-# while(n>0):
-#     dig=n%10
-#     tot=tot+dig
-#     n=n//10
-# print('The total sum of digits is:',tot)
+# n = int(2345)
+# tot = 0
+# while n > 0:
+#     dig = n%10
+#     tot = tot+dig
+#     n = n//10
+# print('The total sum of digits is:', tot)
 
 
 # n=int(2345)
@@ -197,13 +198,13 @@
 #     print("geekyprep")
 
 
-n = int(input("Enter n: "))
-if n < 0:
-    print("negative number")
-elif n == 0:
-    print(1)
-else:
-    fac = 0
-    for i in range(n+1):
-        fac = fac * i
-print(fac)
+# n = int(input("Enter n: "))
+# if n < 0:
+#     print("negative number")
+# elif n == 0:
+#     print(1)
+# else:
+#     fac = 1
+#     for i in range(1, n+1):
+#         fac = fac * i
+#     print(fac)

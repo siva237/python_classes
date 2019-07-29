@@ -67,8 +67,8 @@
 # print(out)
 
 
-# s = 'b8c96gd4'   """ o/p : bcdg4689"""
-# # print(sorted(s))
+s = 'b8c96gd4'  # """ o/p : bcdg4689"""
+# print(sorted(s))
 # alphbets = []
 # digits = []
 # for ch in s:
@@ -124,13 +124,20 @@
 #         l1.append(ch)
 # print(''.join(l1))
 
-str = 'aabbddddbfbbfjjfhh'
+# str = 'aabbddddbfbbfjjfhh'
 # l1 = []
 # for ch in str:
 #     if ch not in l1:
 #         l1.append(ch)
 # for ch in l1:
 #     print("{} occurs {} times".format(ch,str.count(ch)))
+
+
+# str = 'hi hi hi how are u'
+# l1 = str.split(" ")
+# for i in l1:
+#     print("{} occurs {} times".format(i, str.count(i)))
+
 
 # d = {}
 # for ch in str:
@@ -141,9 +148,9 @@ str = 'aabbddddbfbbfjjfhh'
 
 
 # find the vowels in the given string
-# str1 = 'Aabhibus'        # o/p : {'a': 2, 'i': 1, 'u': 1}
+# str1 = 'Aabhibusaaa'        # o/p : {'a': 2, 'i': 1, 'u': 1}
 # d = {}
-# vowels = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U' }
+# vowels = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'}
 # for ch in str1:
 #     if ch in vowels:
 #         d[ch] = d.get(ch, 0)+1
@@ -164,21 +171,20 @@ str = 'aabbddddbfbbfjjfhh'
 
 """ I/P :[[1,2,3],[4,5,6],[7,8,9]]
     O/p : [1,2,3,4,5,6,7,8,9]"""
-# l=[[1,2,3],[4,5,6],[7,8,9]]
-# l1=[]
-# # list = [i for sublist in l for i in sublist]
-# # print(list)
+l=[[1,2,3],[4,5,6],[7,8,9]]
+l1=[]
+# list = [i for sublist in l for i in sublist]
+# print(list)
 # for i in l:
 #     for j in i:
 #         l1.append(j)
-#
 # print(l1)
 
 
 """ finding the missing no. in list"""
-# l=[1,2,3,4,6,7]
-# # m_number= sum(range(l[0],l[-1]+1)) - sum(l)
-# # print((m_number))
+# l = [8, 10, 11, 12, 13, 14]
+# m_number = sum(range(l[0], l[-1]+1)) - sum(l)
+# print((m_number))
 # k=0
 # for i in l:
 #     k=k+i
@@ -221,9 +227,9 @@ str = 'aabbddddbfbbfjjfhh'
 # n = int(input("Enter any number: "))
 # sum1 = 0
 # for i in range(1, n):
-#     if(n % i == 0):
+#     if n % i == 0:
 #         sum1 = sum1 + i
-# if(sum1 == n):
+# if sum1 == n:
 #     print("The number is a Perfect number!")
 # else:
 #     print("The number is not a Perfect number!")
