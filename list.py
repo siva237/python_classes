@@ -27,29 +27,93 @@
 
 
 
-def listmethods():
-    list = [33, 22, 44, 11, 4, 5]
-    list.sort(reverse=True)
-    print(list)
-    a=[1,2,3,'abc',2,2]
-    # a.reverse()
-    # print("reversed list",a)
-    a.append(4)
-    print(a)
-    b = a.count(2)
-    print("count the no. times repeated the give value:",b)
-    a.insert(3,'hai')
-    print(a)
-    c = a.index('hai')
-    print(c)
-    d = a[2:5]  #slice operator...[start index : end index -1: step]
-    d=a[::-1]
-    print(d)
-    a[3]="hello"
-    print(a)
-    for l in a:
-        print(l,end=',')
+# def listmethods():
+#     list = [33, 22, 44, 11, 4, 5]
+#     list.sort(reverse=True)
+#     print(list)
+#     a=[1,2,3,'abc',2,2]
+#     # a.reverse()
+#     # print("reversed list",a)
+#     a.append(4)
+#     print(a)
+#     b = a.count(2)
+#     print("count the no. times repeated the give value:",b)
+#     a.insert(3,'hai')
+#     print(a)
+#     c = a.index('hai')
+#     print(c)
+#     d = a[2:5]  #slice operator...[start index : end index -1: step]
+#     d=a[::-1]
+#     print(d)
+#     a[3]="hello"
+#     print(a)
+#     for l in a:
+#         print(l,end=',')
 
 
+# from functools import reduce
+# l1 = [1, 2, 3, 4, 5]
+# # print(reduce(lambda x, y: x + y, l1))
+# a = len(l1)
+# print(a)
+# sum = a*(a+1)/2
+# print(sum)
 
-listmethods()
+
+# def getMissingNo(A):
+# A = [1, 2, 4, 5, 6]
+# n = len(A)
+# total = (n + 1) * (n + 2) / 2
+# sum_of_A = sum(A)
+# retur = total - sum_of_A
+# print(retur)
+
+
+# s = 'hi how are you'
+# l1 = list(s)
+# print({x: l1.count(x) for x in l1})
+
+# num = 2345
+# s = str(num)
+# for i in s:
+#     print('|'+'*'*int(i))
+
+# l1 = [0,0,1,0,1,1,0,1]   # [0, 0, 0, 0, 1, 1, 1, 1]
+# for i in range(len(l1)):
+#     for j in range(i+1, len(l1)):
+#         if l1[i] > l1[j]:
+#             l1[i], l1[j] = l1[j], l1[i]
+# print(l1)
+
+
+# d = {'aa': 22, 'vv': 33}
+# print(sorted((key, value) for (key, value) in d.items()))
+# print(sorted((value, key) for (key, value) in d.items()))
+
+# s = 'hello python programmer hello'
+# # l1 = s.split()
+# # print(l1)
+# print({i:len(i) for i in s.split()})
+# # print({i: l1.count(i) for i in l1})
+# l2 = ['a', 'f', 'g', 'a', 'A', 'g']
+# print({i: l2.count(i) for i in l2})
+
+
+# l1 = [2,2,2]
+# l2 = [3,3,3]
+# l3 = []
+# for i in range(0, len(l1)):
+#     l3.append(l1[i] + l2[i])
+#
+# print(l3)
+# print([l1[i]+l2[i] for i in range(len(l1))])
+
+def mk(x):
+    def mk1():
+        print("Decorated")
+        x()
+    return mk1
+def mk2():
+    print("Ordinary")
+p = mk(mk2)
+p()
